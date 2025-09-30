@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Horario Ciclo V</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fuente elegante desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background: url("../../images/fondo-puno.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Fondo difuminado detrás del contenido */
+    .overlay {
+      background: rgba(255, 255, 255, 0.85);
+      min-height: 100vh;
+      padding: 0;
+    }
+
+    /* Encabezado */
+    header {
+      background: rgba(30, 60, 114, 0.9);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    /* Contenedor de la tabla */
+    .table-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background: #1e3c72;
+      color: white;
+      font-weight: 600;
+    }
+
+    tr:nth-child(even) {
+      background: #f7f9fc;
+    }
+
+    tr:hover {
+      background: #e6f0ff;
+    }
+
+    /* Botón volver */
+    .back-btn {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 12px 24px;
+      background: #1e3c72;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #2a5298;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      th, td {
+        font-size: 12px;
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <h1>Horario Ciclo V</h1>
+    </header>
+
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>Hora</th>
+          <th>Lunes</th>
+          <th>Martes</th>
+          <th>Miércoles</th>
+          <th>Jueves</th>
+          <th>Viernes</th>
+        </tr>
+        <tr>
+          <td>8:00 - 9:00</td>
+          <td>Matemáticas</td>
+          <td></td>
+          <td>Programación</td>
+          <td></td>
+          <td>Inglés</td>
+        </tr>
+        <tr>
+          <td>9:00 - 10:00</td>
+          <td></td>
+          <td>Base de Datos</td>
+          <td></td>
+          <td>Redes</td>
+          <td></td>
+        </tr>
+        <!-- 👆 Agrega aquí el resto de tu horario -->
+      </table>
+    </div>
+
+    <div style="text-align:center;">
+      <a href="../../index.html" class="back-btn">⬅ Volver a la página principal</a>
+    </div>
+  </div>
+</body>
+</html>
