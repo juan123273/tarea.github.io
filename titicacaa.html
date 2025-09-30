@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<style>
+/* Fondo con overlay oscuro */
+body {
+	margin: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: url("../jenskitchen/images/fondo-titicaca.jpg") no-repeat center center fixed;
+	background-size: cover;
+	color: white;
+	text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+/* Capa semitransparente */
+body::before {
+	content: "";
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: -1;
+}
+
+/* Encabezado */
+header {
+	text-align: center;
+	padding: 1.5em;
+	background: rgba(57, 153, 153, 0.85);
+	color: #fff;
+	border-bottom: 3px solid #2c3e50;
+}
+
+/* Estilos de títulos */
+h1, h2 {	
+	color: #fff;
+}
+h1 {
+	font-size: 1.8em;
+	margin-bottom: 0.5em;
+}
+h2 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1.2em;
+}
+
+/* Imagen centrada con borde y sombra */
+img.centrado {
+	display: block;
+	margin: 2em auto;
+	width: 350px;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+	border: 4px solid #fff;
+}
+
+/* Contenido */
+main {
+	margin: 2em auto;
+	width: 70%;
+	background: rgba(255,255,255,0.1);
+	padding: 1.5em;
+	border-radius: 10px;
+}
+
+/* Link */
+a {
+	color: #ffcc00;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+	padding: 1em;
+	margin-top: 2em;
+	background: rgba(0,0,0,0.7);
+	color: #ccc;
+	font-size: 0.9em;
+}
+</style>
+</head>
+
+<body>
+
+<main>
+  <img src="../jenskitchen/images/titicaca.jpg" alt="Lago Titicaca" class="centrado">
+
+  <p>El <b>Lago Titicaca</b>, ubicado entre Perú y Bolivia, es el lago navegable más alto del mundo, con más de 3800 metros sobre el nivel del mar. 
+  Su belleza natural y riqueza cultural lo convierten en un lugar único: hogar de comunidades ancestrales como los Uros, que viven en islas flotantes construidas con totora. 
+  Es un destino lleno de historia, tradición y paisajes impresionantes.</p>
+
+  <p><a href="./index.html">Volver a la página principal</a></p>
+</main>
+</body>
+</html>
